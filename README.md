@@ -12,7 +12,7 @@ Workaround:
 
 1. Make your DB functions convert returned `timestamp without timezone` values to `text`. E.g. `table.created_at::text AS created_at`. String representation will be like `2016-08-26 04:32:04.273131`.
 
-2. Use `pg-date` helper to create a native javascript `Date` object in correct timezone.
+2. Use `pg-date` helper to create a native javascript `Date` object in correct timezone. If the value that comes from database is `null`, the `pg-date` helper will also return `null`.
 
 
 ## Example
