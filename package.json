@@ -1,6 +1,6 @@
 {
   "name": "pg-date",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "description": "Convert string representation of PostgreSQL timestamp without timezone output into a Date object",
   "main": "index.js",
   "author": {
